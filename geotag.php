@@ -4,8 +4,8 @@
  // some basic sanity checks
 
      //connect to the db
-    $con=mysql_connect('us-cdbr-iron-east-03.cleardb.net','b5ad0b67d00075','5ab48235')  or die ("Con Error".mysql_error());
-    mysql_select_db('ad_490fe8dc6588505',$con);
+    $con=mysql_connect('server name here','user name here','password here')  or die ("Con Error".mysql_error());
+    mysql_select_db('DB name here',$con);
      // get the image from the db
      $sql = "SELECT OfficeAddress, Mobile FROM GeoTag WHERE OfficeName ='" .$_GET['oname']."'";
 
